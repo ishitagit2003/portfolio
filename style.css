@@ -168,12 +168,19 @@ input::placeholder {
     padding-top: 6%;
     padding-left: 10%;
 }
+.bas{
+    font-size: medium;
+    padding-left: 10%;
+    padding-right: 33%;
+    padding-top: 1%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .college h4{
     font-size: 200%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:darkblue;
     margin-left: 20%;
-    padding-top: 8%;
+    padding-top: 5%;
   
 }
 .college p{
@@ -184,14 +191,14 @@ input::placeholder {
 .School p{
     
     padding-left: 3%;
-    padding-right: 35%;
+    padding-right: 38%;
 }
 .School h4{
     font-size: 200%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:darkblue;
     margin-left: 20%;
-    padding-top: 3%;
+    padding-top: 5%;
 }
 .about .fa{
     /* padding-right: 20%;
