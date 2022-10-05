@@ -8,7 +8,7 @@ body{
 }
 .sidebar
 {   height: 650px;
-    width: 30%;
+    width: 24%;
     background-color: rgba(57, 32, 4, 0.849);
     color:bisque
    
@@ -20,8 +20,12 @@ body{
 .sidebar nav li{
     text-decoration: none;
     list-style: none;
-    font-size: 30px;
+    font-size: 26px;
     padding-top: 50px;
+}
+.sidebar nav li:hover{
+    
+    font-size: 200%;
 }
 .main
 {
@@ -77,23 +81,26 @@ margin-bottom: 20px;
     cursor: pointer;
     /* margin-left: 10px; */
  }
-
  .buttons button:hover{
     background-color:rgba(57, 32, 4, 0.849);
     color:bisque;
  }
+ .connect{
+   height: 5%;
+    color:bisque
+ }
+ .connect ul:hover{
+    
+    font-size: 200%;
+}
  /* footer{
     margin-bottom: 0%;
     background-color: rgba(57, 32, 4, 0.849);
  } */
-
- 
- 
  /*contact tab*/
 
  .contact h1{
-     
-    padding-top: 15%;
+      padding-top: 14%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 250%;
     color:rgba(57, 4, 81, 0.938);
@@ -154,11 +161,7 @@ input::placeholder {
   .contact .cont1 h6{
     font-size: xx-small;
   }
-
-
-
-  
-  /*about tab*/
+ /*about tab*/
  
  .about h1{
     font-size: 300%;
@@ -181,7 +184,6 @@ input::placeholder {
     color:darkblue;
     margin-left: 20%;
     padding-top: 5%;
-  
 }
 .college p{
     
@@ -205,5 +207,248 @@ input::placeholder {
     height: 50%;  */
     color:rgba(6, 114, 71, 0.909)
     /* padding-left: 30%; */
+}
+#clock{
+  margin-left: 92%;
+  font-size: x-large;
+  font-weight: bolder;
+}
 
+.connect{
+    color:bisque;
+    padding-top: 2%;
+    padding-left: 12%;
+}
+/* .skills .right .bars{ */
+    /* margin-bottom: 2px;
+    margin-left: 10%;
+}
+.skills  .right .info{
+    display: flex;
+}
+.skills .text{
+    margin-right:1.5% ;
+}
+.skills  .right span{
+    font-weight: 600;
+    font-size: 100%;
+}
+.skills  .right .line{
+    height: 12px;
+    width: 50%;
+    background: rgba(211, 211, 211, 0.662);
+    position: relative;
+}
+.skills  .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+/* .skills  .right .line:hover{
+   font-size: 150%;
+} */
+
+ /* .right .html::before{
+    width: 75%;
+}
+ .right .css::before{
+    width: 50%;
+}
+ .right .javascript::before{
+    width: 5%;
+}
+ .right .cbasic::before{
+    width: 80%;
+}
+ .right .cAdv::before{
+    width: 70%;
+}
+.right .java::before{
+    width: 35%;
+}
+.skills h1{
+    margin-left: 30%;
+    font-size: 250%;
+    color:rgb(3, 79, 18);
+    font-weight: bolder;
+}  */
+
+/* .connect .git{
+    padding-left: 1px;
+}
+.connect .facebook{
+    padding-left: 3px;
+}
+.connect .gmail{
+    margin-left: 5px;
+}
+.connect .linkedin{
+    margin-left: 6px;
+}
+.connect .insta{
+    margin-left: 7px;
+} */
+
+/* * {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+/* body {
+    background-image: linear-gradient(rgba(23, 21, 21, 0.8), rgba(19, 20, 20, 0.6)), url(img9.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+} */
+
+.skill-bar {
+    border: 1px solid #fff;
+    width: 80%;
+    max-width: 438px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 0% 3% 0% 1%;
+    height: 300%;
+    max-height: 500px;
+    background-color: rgba(236, 201, 77, 0.726);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skill-bar .container {
+    padding: 1% 0;
+}
+.skill-bar .container h1 {
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10%;
+    font-size: 300%;
+}
+.skill-bar .container .bar .info {
+    margin-top: 1%;
+    color: rgb(72 20 3 / 86%);
+    /* margin-top: 3%;
+    color: rgba(255, 242, 238, 0.863); */
+}
+.skill-bar .container .bar .info span {
+    font-size: 20px;
+    font-weight: 550;
+}
+.skill-bar .container .bar .progress-line {
+    margin-top: -33px;
+    margin-left: 8px;
+    position: relative;
+    height: 12px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: rgba(255, 242, 238, 0.607);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(90, 69, 69, 0.8);
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+.skill-bar .container .bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: rgba(57, 32, 4, 0.849);
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.skill-bar .container .bar .progress-line.html span {
+    width: 75%;
+}
+
+.skill-bar .container .bar .progress-line.css span {
+    width: 50%;
+}
+
+.skill-bar .container .bar .progress-line.javascript span {
+    width: 5%;
+}
+
+.skill-bar .container .bar .progress-line.cpp span {
+    width: 70%;
+}
+
+.skill-bar .container .bar .progress-line.java span {
+    width: 35%;
+}
+.skill-bar .container .bar .progress-line.cc span {
+    width: 80%;
+}
+
+.skill-bar .container .bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0;
+    border-top-color: rgba(57, 32, 4, 0.849);
+    opacity: 0;
+    animation: text1 0.5s 1s linear forwards;
+}
+
+.skill-bar .container .bar .progress-line span::after {
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: -24px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 242, 238, 0.863);
+    background: rgba(57, 32, 4, 0.849);
+    padding: 1px 6px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: text1 0.4s 1s linear forwards;
+}
+
+@keyframes text1 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-bar .container .bar .progress-line.html span::after {
+    content: "75%";
+}
+.skill-bar .container .bar .progress-line.css span::after {
+    content: "50%";
+}
+.skill-bar .container .bar .progress-line.javascript span::after {
+    content: "5%";
+}
+
+.skill-bar .container .bar .progress-line.cpp span::after {
+    content: "70%";
+}
+
+.skill-bar .container .bar .progress-line.java span::after {
+    content: "35%";
+}
+.skill-bar .container .bar .progress-line.cc span::after {
+    content: "70";
 }
