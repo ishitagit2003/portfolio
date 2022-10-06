@@ -13,6 +13,12 @@ body{
     color:bisque
    
 }
+@media (max-width:600px)
+{
+    .sidebar{
+        width: 60%;
+    }
+}
 .sidebar nav{
     padding: 30px;
     
@@ -22,7 +28,19 @@ body{
     list-style: none;
     font-size: 26px;
     padding-top: 50px;
+    cursor: pointer;
 }
+@media (max-width: 600px)
+{
+    .sidebar{
+        width: 60%;
+        height:100%
+    }
+    nav ul li {
+      font-size:small;
+      position: relative; 
+    }
+} 
 .sidebar nav li:hover{
     
     font-size: 200%;
@@ -152,7 +170,7 @@ input::placeholder {
     padding: 6px 8px;
     box-sizing: border-box;
   }
-  input[type=phone] {
+  input[type=tel] {
     width: 20%;
     height: 5%;
     padding: 6px 8px;
@@ -328,11 +346,32 @@ input::placeholder {
 .skill-bar .container {
     padding: 1% 0;
 }
+@media (max-width: 600px)
+{
+    .skill-bar .container {
+       width:40%;
+       padding-left:8%;
+
+    }
+    .skill-bar{
+        width:50%;
+        max-height: 500px;
+        max-width: 250px;
+       margin-left:30%;
+    }
+}
 .skill-bar .container h1 {
     text-align: center;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    /* bottom right blur howFarItGoesBeforeBlur */
     margin-bottom: 10%;
     font-size: 300%;
+}
+@media (max-width: 600px){
+    .skill-bar .container h1{
+        font-size: 190%;
+    }
+    
 }
 .skill-bar .container .bar .info {
     margin-top: 1%;
